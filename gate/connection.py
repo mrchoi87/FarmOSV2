@@ -247,7 +247,7 @@ class ETXSerialConnection(SerialConnection):
         return n
 
 if __name__ == "__main__":
-    opt = {"port" : "/dev/ttyACM0", "baudrate": 9600, "type":"NUTRI"}
+    opt = {"port" : "/dev/ttyUSB0", "baudrate": 9600, "type":"NUTRI"}
     sc = SerialConnection(opt, None)
     sc.open()
     print sc.read(10)
